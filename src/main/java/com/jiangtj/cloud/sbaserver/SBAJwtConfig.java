@@ -17,7 +17,7 @@ public class SBAJwtConfig {
         return instance -> {
             String instanceName = instance.getRegistration().getName();
             HttpHeaders httpHeaders = new HttpHeaders();
-            String header = authServer.builder(instanceName).setAudience("*").build();
+            String header = authServer.builder(instanceName).build();
             httpHeaders.add(authServer.getOptions(instanceName).getRequest().getHeaderName(), header);
             return httpHeaders;
         };

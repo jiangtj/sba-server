@@ -86,7 +86,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <finalName>${project.name}</finalName>
                     <executable>true</executable>
                     <image>
                         <name>jiangtj/sba-sender</name>
@@ -94,12 +93,6 @@
                             <BP_JVM_VERSION>17.*</BP_JVM_VERSION>
                         </env>
                     </image>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
                 </configuration>
             </plugin>
         </plugins>

@@ -29,5 +29,5 @@ jobs:
       - name: Push
         run: |
           docker login -u jiangtj -p ${{ secrets.MYPASS }}
-          docker push jiangtj/sba-sender:latest
+          docker push jiangtj/sba-server:latest
 

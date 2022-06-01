@@ -88,6 +88,12 @@
                 <configuration>
                     <finalName>${project.name}</finalName>
                     <executable>true</executable>
+                    <image>
+                        <name>jiangtj/sba-sender</name>
+                        <env>
+                            <BP_JVM_VERSION>17.*</BP_JVM_VERSION>
+                        </env>
+                    </image>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
